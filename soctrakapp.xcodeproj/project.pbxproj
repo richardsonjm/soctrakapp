@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		369B17A21DF0B144009E2E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17A11DF0B144009E2E46 /* AppDelegate.swift */; };
+		369B17A41DF0B144009E2E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17A31DF0B144009E2E46 /* ViewController.swift */; };
+		369B17A71DF0B144009E2E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369B17A51DF0B144009E2E46 /* Main.storyboard */; };
+		369B17A91DF0B144009E2E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369B17A81DF0B144009E2E46 /* Assets.xcassets */; };
+		369B17AC1DF0B144009E2E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */; };
+		369B17B71DF0B144009E2E46 /* soctrakappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17B61DF0B144009E2E46 /* soctrakappTests.swift */; };
+		369B17C21DF0B144009E2E46 /* soctrakappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17C11DF0B144009E2E46 /* soctrakappUITests.swift */; };
+		BAE2BDE18E42BFF01EDE8417 /* libPods-soctrakapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82323669004A533F52F867F8 /* libPods-soctrakapp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		369B17B31DF0B144009E2E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 369B17961DF0B143009E2E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 369B179D1DF0B143009E2E46;
+			remoteInfo = soctrakapp;
+		};
+		369B17BE1DF0B144009E2E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 369B17961DF0B143009E2E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 369B179D1DF0B143009E2E46;
+			remoteInfo = soctrakapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		369B179E1DF0B144009E2E46 /* soctrakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soctrakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		369B17A11DF0B144009E2E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		369B17A31DF0B144009E2E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		369B17A61DF0B144009E2E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		369B17A81DF0B144009E2E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		369B17AB1DF0B144009E2E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		369B17AD1DF0B144009E2E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369B17B21DF0B144009E2E46 /* soctrakappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soctrakappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		369B17B61DF0B144009E2E46 /* soctrakappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soctrakappTests.swift; sourceTree = "<group>"; };
+		369B17B81DF0B144009E2E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369B17BD1DF0B144009E2E46 /* soctrakappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soctrakappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		369B17C11DF0B144009E2E46 /* soctrakappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soctrakappUITests.swift; sourceTree = "<group>"; };
+		369B17C31DF0B144009E2E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A1857360633737A8B254E1 /* Pods-soctrakapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soctrakapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp.release.xcconfig"; sourceTree = "<group>"; };
+		82323669004A533F52F867F8 /* libPods-soctrakapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-soctrakapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E843EF86A9C0916CCA1107B6 /* Pods-soctrakapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soctrakapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		369B179B1DF0B143009E2E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE2BDE18E42BFF01EDE8417 /* libPods-soctrakapp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17AF1DF0B144009E2E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17BA1DF0B144009E2E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369B17951DF0B143009E2E46 = {
+			isa = PBXGroup;
+			children = (
+				369B17A01DF0B144009E2E46 /* soctrakapp */,
+				369B17B51DF0B144009E2E46 /* soctrakappTests */,
+				369B17C01DF0B144009E2E46 /* soctrakappUITests */,
+				369B179F1DF0B144009E2E46 /* Products */,
+				D6EDAC289CA72C2AB425049B /* Pods */,
+				46EE970855DA85B54A59E1F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		369B179F1DF0B144009E2E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				369B179E1DF0B144009E2E46 /* soctrakapp.app */,
+				369B17B21DF0B144009E2E46 /* soctrakappTests.xctest */,
+				369B17BD1DF0B144009E2E46 /* soctrakappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		369B17A01DF0B144009E2E46 /* soctrakapp */ = {
+			isa = PBXGroup;
+			children = (
+				369B17A11DF0B144009E2E46 /* AppDelegate.swift */,
+				369B17A31DF0B144009E2E46 /* ViewController.swift */,
+				369B17A51DF0B144009E2E46 /* Main.storyboard */,
+				369B17A81DF0B144009E2E46 /* Assets.xcassets */,
+				369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */,
+				369B17AD1DF0B144009E2E46 /* Info.plist */,
+			);
+			path = soctrakapp;
+			sourceTree = "<group>";
+		};
+		369B17B51DF0B144009E2E46 /* soctrakappTests */ = {
+			isa = PBXGroup;
+			children = (
+				369B17B61DF0B144009E2E46 /* soctrakappTests.swift */,
+				369B17B81DF0B144009E2E46 /* Info.plist */,
+			);
+			path = soctrakappTests;
+			sourceTree = "<group>";
+		};
+		369B17C01DF0B144009E2E46 /* soctrakappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				369B17C11DF0B144009E2E46 /* soctrakappUITests.swift */,
+				369B17C31DF0B144009E2E46 /* Info.plist */,
+			);
+			path = soctrakappUITests;
+			sourceTree = "<group>";
+		};
+		46EE970855DA85B54A59E1F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82323669004A533F52F867F8 /* libPods-soctrakapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6EDAC289CA72C2AB425049B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E843EF86A9C0916CCA1107B6 /* Pods-soctrakapp.debug.xcconfig */,
+				54A1857360633737A8B254E1 /* Pods-soctrakapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		369B179D1DF0B143009E2E46 /* soctrakapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369B17C61DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakapp" */;
+			buildPhases = (
+				976C2D904C87C2C92CB843D6 /* [CP] Check Pods Manifest.lock */,
+				369B179A1DF0B143009E2E46 /* Sources */,
+				369B179B1DF0B143009E2E46 /* Frameworks */,
+				369B179C1DF0B143009E2E46 /* Resources */,
+				79E0D67FFF52009A4C6278CF /* [CP] Embed Pods Frameworks */,
+				75CB2684DBDD7A9D704432AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = soctrakapp;
+			productName = soctrakapp;
+			productReference = 369B179E1DF0B144009E2E46 /* soctrakapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		369B17B11DF0B144009E2E46 /* soctrakappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369B17C91DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakappTests" */;
+			buildPhases = (
+				369B17AE1DF0B144009E2E46 /* Sources */,
+				369B17AF1DF0B144009E2E46 /* Frameworks */,
+				369B17B01DF0B144009E2E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				369B17B41DF0B144009E2E46 /* PBXTargetDependency */,
+			);
+			name = soctrakappTests;
+			productName = soctrakappTests;
+			productReference = 369B17B21DF0B144009E2E46 /* soctrakappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		369B17BC1DF0B144009E2E46 /* soctrakappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369B17CC1DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakappUITests" */;
+			buildPhases = (
+				369B17B91DF0B144009E2E46 /* Sources */,
+				369B17BA1DF0B144009E2E46 /* Frameworks */,
+				369B17BB1DF0B144009E2E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				369B17BF1DF0B144009E2E46 /* PBXTargetDependency */,
+			);
+			name = soctrakappUITests;
+			productName = soctrakappUITests;
+			productReference = 369B17BD1DF0B144009E2E46 /* soctrakappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		369B17961DF0B143009E2E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "John Richardson";
+				TargetAttributes = {
+					369B179D1DF0B143009E2E46 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XLTX8XH2N8;
+						ProvisioningStyle = Automatic;
+					};
+					369B17B11DF0B144009E2E46 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XLTX8XH2N8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 369B179D1DF0B143009E2E46;
+					};
+					369B17BC1DF0B144009E2E46 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XLTX8XH2N8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 369B179D1DF0B143009E2E46;
+					};
+				};
+			};
+			buildConfigurationList = 369B17991DF0B143009E2E46 /* Build configuration list for PBXProject "soctrakapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 369B17951DF0B143009E2E46;
+			productRefGroup = 369B179F1DF0B144009E2E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				369B179D1DF0B143009E2E46 /* soctrakapp */,
+				369B17B11DF0B144009E2E46 /* soctrakappTests */,
+				369B17BC1DF0B144009E2E46 /* soctrakappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		369B179C1DF0B143009E2E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369B17AC1DF0B144009E2E46 /* LaunchScreen.storyboard in Resources */,
+				369B17A91DF0B144009E2E46 /* Assets.xcassets in Resources */,
+				369B17A71DF0B144009E2E46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17B01DF0B144009E2E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17BB1DF0B144009E2E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75CB2684DBDD7A9D704432AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E0D67FFF52009A4C6278CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		976C2D904C87C2C92CB843D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		369B179A1DF0B143009E2E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369B17A41DF0B144009E2E46 /* ViewController.swift in Sources */,
+				369B17A21DF0B144009E2E46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17AE1DF0B144009E2E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369B17B71DF0B144009E2E46 /* soctrakappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369B17B91DF0B144009E2E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369B17C21DF0B144009E2E46 /* soctrakappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		369B17B41DF0B144009E2E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 369B179D1DF0B143009E2E46 /* soctrakapp */;
+			targetProxy = 369B17B31DF0B144009E2E46 /* PBXContainerItemProxy */;
+		};
+		369B17BF1DF0B144009E2E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 369B179D1DF0B143009E2E46 /* soctrakapp */;
+			targetProxy = 369B17BE1DF0B144009E2E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		369B17A51DF0B144009E2E46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369B17A61DF0B144009E2E46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369B17AB1DF0B144009E2E46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		369B17C41DF0B144009E2E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		369B17C51DF0B144009E2E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		369B17C71DF0B144009E2E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E843EF86A9C0916CCA1107B6 /* Pods-soctrakapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		369B17C81DF0B144009E2E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A1857360633737A8B254E1 /* Pods-soctrakapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		369B17CA1DF0B144009E2E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/soctrakapp.app/soctrakapp";
+			};
+			name = Debug;
+		};
+		369B17CB1DF0B144009E2E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/soctrakapp.app/soctrakapp";
+			};
+			name = Release;
+		};
+		369B17CD1DF0B144009E2E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = soctrakapp;
+			};
+			name = Debug;
+		};
+		369B17CE1DF0B144009E2E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XLTX8XH2N8;
+				INFOPLIST_FILE = soctrakappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "john-richardson.soctrakappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = soctrakapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		369B17991DF0B143009E2E46 /* Build configuration list for PBXProject "soctrakapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369B17C41DF0B144009E2E46 /* Debug */,
+				369B17C51DF0B144009E2E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369B17C61DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369B17C71DF0B144009E2E46 /* Debug */,
+				369B17C81DF0B144009E2E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		369B17C91DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369B17CA1DF0B144009E2E46 /* Debug */,
+				369B17CB1DF0B144009E2E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		369B17CC1DF0B144009E2E46 /* Build configuration list for PBXNativeTarget "soctrakappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369B17CD1DF0B144009E2E46 /* Debug */,
+				369B17CE1DF0B144009E2E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 369B17961DF0B143009E2E46 /* Project object */;
+}
