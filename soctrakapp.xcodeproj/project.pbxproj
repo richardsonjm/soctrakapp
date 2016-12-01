@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3653D51C1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653D51B1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift */; };
 		369B17A21DF0B144009E2E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17A11DF0B144009E2E46 /* AppDelegate.swift */; };
 		369B17A41DF0B144009E2E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17A31DF0B144009E2E46 /* ViewController.swift */; };
 		369B17A71DF0B144009E2E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369B17A51DF0B144009E2E46 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3653D51B1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPartnershipsTableViewController.swift; sourceTree = "<group>"; };
 		369B179E1DF0B144009E2E46 /* soctrakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soctrakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369B17A11DF0B144009E2E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369B17A31DF0B144009E2E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				369B17A81DF0B144009E2E46 /* Assets.xcassets */,
 				369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */,
 				369B17AD1DF0B144009E2E46 /* Info.plist */,
+				3653D51B1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift */,
 			);
 			path = soctrakapp;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				369B17A41DF0B144009E2E46 /* ViewController.swift in Sources */,
 				369B17A21DF0B144009E2E46 /* AppDelegate.swift in Sources */,
+				3653D51C1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
