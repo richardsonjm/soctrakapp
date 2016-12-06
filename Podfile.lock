@@ -1,15 +1,12 @@
 PODS:
-  - SSKeychain (1.2.3)
-  - SVProgressHUD (1.1.3)
+  - Alamofire (4.2.0)
 
 DEPENDENCIES:
-  - SSKeychain (~> 1.2.2)
-  - SVProgressHUD (~> 1.0)
+  - Alamofire (~> 4.0)
 
 SPEC CHECKSUMS:
-  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
-  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
 
-PODFILE CHECKSUM: a0694d13ae620d5410a1241481c328fa08b77884
+PODFILE CHECKSUM: 79097ca01405f8d5801d41c7753a11470bcd3f04
 
 COCOAPODS: 1.1.1
