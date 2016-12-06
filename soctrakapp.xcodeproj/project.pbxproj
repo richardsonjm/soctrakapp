@@ -15,6 +15,8 @@
 		369B17AC1DF0B144009E2E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */; };
 		369B17B71DF0B144009E2E46 /* soctrakappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17B61DF0B144009E2E46 /* soctrakappTests.swift */; };
 		369B17C21DF0B144009E2E46 /* soctrakappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B17C11DF0B144009E2E46 /* soctrakappUITests.swift */; };
+		36AC7AAF1DF711610075766B /* Partnership+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AC7AAE1DF711610075766B /* Partnership+Networking.swift */; };
+		36AC7AB11DF711D80075766B /* Partnership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AC7AB01DF711D80075766B /* Partnership.swift */; };
 		EAEFE83E30452070E2C72B1E /* Pods_soctrakapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F73F3D5D1AC482F8EDA01F4 /* Pods_soctrakapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		369B17BD1DF0B144009E2E46 /* soctrakappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soctrakappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		369B17C11DF0B144009E2E46 /* soctrakappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soctrakappUITests.swift; sourceTree = "<group>"; };
 		369B17C31DF0B144009E2E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36AC7AAE1DF711610075766B /* Partnership+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Partnership+Networking.swift"; sourceTree = "<group>"; };
+		36AC7AB01DF711D80075766B /* Partnership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partnership.swift; sourceTree = "<group>"; };
 		54A1857360633737A8B254E1 /* Pods-soctrakapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soctrakapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp.release.xcconfig"; sourceTree = "<group>"; };
 		9F73F3D5D1AC482F8EDA01F4 /* Pods_soctrakapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soctrakapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E843EF86A9C0916CCA1107B6 /* Pods-soctrakapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soctrakapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soctrakapp/Pods-soctrakapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				369B17AA1DF0B144009E2E46 /* LaunchScreen.storyboard */,
 				369B17AD1DF0B144009E2E46 /* Info.plist */,
 				3653D51B1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift */,
+				36AC7AAE1DF711610075766B /* Partnership+Networking.swift */,
+				36AC7AB01DF711D80075766B /* Partnership.swift */,
 			);
 			path = soctrakapp;
 			sourceTree = "<group>";
@@ -342,6 +348,8 @@
 			files = (
 				369B17A41DF0B144009E2E46 /* ViewController.swift in Sources */,
 				369B17A21DF0B144009E2E46 /* AppDelegate.swift in Sources */,
+				36AC7AB11DF711D80075766B /* Partnership.swift in Sources */,
+				36AC7AAF1DF711610075766B /* Partnership+Networking.swift in Sources */,
 				3653D51C1DF0C54200FF9ACE /* STPartnershipsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
