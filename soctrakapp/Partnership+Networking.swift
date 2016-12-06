@@ -45,11 +45,13 @@ extension Partnership {
         if let userName = userName {
             json["userName"] = userName
         }
-        json["partnerId"] = partnerId
         if let partnerName = partnerName {
             json["partnerName"] = partnerName
         }
-        json["confirmed"] = confirmed
+        var partnership = [String: Any]()
+        partnership["partnerId"] = partnerId
+        partnership["confirmed"] = confirmed
+        json["partnership"] = partnership
         return json
     }
     
@@ -67,7 +69,7 @@ extension Partnership {
                           method: .post,
                           parameters: fields,
                           encoding: JSONEncoding.default,
-                          headers: nil)
+                          headers: ["st-auth-token": "0696dc16-87c4-46cd-a916-d4da93538d39"])
             .responseJSON { response in
                 let result = Partnership.partnershipFromResponse(response: response)
                 completionHandler(result)
