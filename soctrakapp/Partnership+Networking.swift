@@ -56,7 +56,9 @@ extension Partnership {
     }
     
     class func partnershipByID(_ id: Int, completionHandler: @escaping (Result<Partnership>) -> Void) {
-        Alamofire.request(Partnership.endpointForID(id))
+        Alamofire.request(Partnership.endpointForID(id),
+                          method: .get,
+                          headers: ["st-auth-token": "2e3f5688-840d-4818-b57e-6233896061a5"])
             .responseJSON { response in
                 let result = Partnership.partnershipFromResponse(response: response)
                 completionHandler(result)
@@ -69,7 +71,7 @@ extension Partnership {
                           method: .post,
                           parameters: fields,
                           encoding: JSONEncoding.default,
-                          headers: ["st-auth-token": "0696dc16-87c4-46cd-a916-d4da93538d39"])
+                          headers: ["st-auth-token": "2e3f5688-840d-4818-b57e-6233896061a5"])
             .responseJSON { response in
                 let result = Partnership.partnershipFromResponse(response: response)
                 completionHandler(result)
