@@ -13,6 +13,18 @@ enum BackendError: Error {
     case objectSerialization(reason: String)
 }
 
+class PartnershipsWrapper {
+    var partnerships: [Partnership]?
+    var count: Int {
+        if let partnerships = partnerships {
+            return partnerships.count
+        } else {
+            return 0
+        }
+        
+    }
+}
+
 extension Partnership {
     class func endpointForID(_ id: Int) -> String {
         return "http://localhost:5000/v1/partnerships/\(id)"
@@ -53,6 +65,16 @@ extension Partnership {
         partnership["confirmed"] = confirmed
         json["partnership"] = partnership
         return json
+    }
+    
+    class func partnerships(completionHandler: @escaping (Result<PartnershipsWrapper>) -> Void) {
+        Alamofire.request(Partnership.endpointForPartnerships(),
+                          method: .get,
+                          headers: ["st-auth-token": "2e3f5688-840d-4818-b57e-6233896061a5"])
+            .responseJSON { response in
+                let result = Partnership.partnershipsArrayFromResponse(response: response)
+                completionHandler(result)
+        }
     }
     
     class func partnershipByID(_ id: Int, completionHandler: @escaping (Result<Partnership>) -> Void) {
@@ -98,5 +120,31 @@ extension Partnership {
                 "Could not create Partnership object from JSON"))
         }
         return .success(partnership)
+    }
+    
+    private class func partnershipsArrayFromResponse(response: DataResponse<Any>) -> Result<PartnershipsWrapper> {
+        guard response.result.error == nil else {
+            // got an error in getting the data, need to handle it
+            print(response.result.error!)
+            return .failure(response.result.error!)
+        }
+        
+        // make sure we got JSON and it's a dictionary
+        guard let json = response.result.value as? [[String:Any]] else {
+            print("didn't get partnership object as JSON from API")
+            return .failure(BackendError.objectSerialization(reason:
+                "Did not get JSON array in response"))
+        }
+        
+        let wrapper:PartnershipsWrapper = PartnershipsWrapper()
+        
+        var allPartnerships: [Partnership] = []
+        for jsonPartnership in json {
+            if let partnership = Partnership(json: jsonPartnership) {
+                allPartnerships.append(partnership)
+            }
+        }
+        wrapper.partnerships = allPartnerships
+        return .success(wrapper)
     }
 }

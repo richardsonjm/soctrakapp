@@ -20,46 +20,65 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         // MARK: Get Partnership #2
-        Partnership.partnershipByID(2) { result in
+//        Partnership.partnershipByID(2) { result in
+//            if let error = result.error {
+//                // got an error in getting the data, need to handle it
+//                print("error calling GET on /partnerships/2")
+//                print(error)
+//                return
+//            }
+//            guard let partnership = result.value else {
+//                print("error calling POST on /partnerships/2 - result is nil")
+//                return
+//            }
+//            // success!
+//            print(partnership.description())
+//            print(partnership.userId)
+//        }
+//        
+//        // MARK: Create new partnership
+//        guard let newPartnership = Partnership(id: nil,
+//                                 userId: 6,
+//                                 userName: nil,
+//                                 partnerId: 11,
+//                                 partnerName: nil,
+//                                 confirmed: false) else {
+//                                    print("error: newPartnership isn't a Partnership")
+//                                    return
+//        }
+//        newPartnership.save { result in
+//            guard result.error == nil else {
+//                // got an error in getting the data, need to handle it
+//                print("error calling POST on /partnerships/")
+//                print(result.error!)
+//                return
+//            }
+//            guard let partnership = result.value else {
+//                print("error calling POST on /partnership/ result is nil")
+//                return
+//            }
+//            // success!
+//            print(partnership.description())
+//            print(partnership.userId)
+//        }
+        Partnership.partnerships { result in
             if let error = result.error {
                 // got an error in getting the data, need to handle it
-                print("error calling GET on /partnerships/2")
+                print("error calling GET on /partnerships")
                 print(error)
                 return
             }
-            guard let partnership = result.value else {
-                print("error calling POST on /partnerships/2 - result is nil")
+            guard let partnerships = result.value else {
+                print("error calling GET on /partnerships - result is nil")
                 return
             }
             // success!
-            print(partnership.description())
-            print(partnership.userId)
-        }
-        
-        // MARK: Create new partnership
-        guard let newPartnership = Partnership(id: nil,
-                                 userId: 6,
-                                 userName: nil,
-                                 partnerId: 11,
-                                 partnerName: nil,
-                                 confirmed: false) else {
-                                    print("error: newPartnership isn't a Partnership")
-                                    return
-        }
-        newPartnership.save { result in
-            guard result.error == nil else {
-                // got an error in getting the data, need to handle it
-                print("error calling POST on /partnerships/")
-                print(result.error!)
-                return
+            if let partnerships = partnerships.partnerships {
+                for partnership in partnerships {
+                    print(partnership.description())
+                }
             }
-            guard let partnership = result.value else {
-                print("error calling POST on /partnership/ result is nil")
-                return
-            }
-            // success!
-            print(partnership.description())
-            print(partnership.userId)
+            
         }
     }
 
