@@ -61,25 +61,7 @@ class ViewController: UIViewController {
 //            print(partnership.description())
 //            print(partnership.userId)
 //        }
-        Partnership.partnerships { result in
-            if let error = result.error {
-                // got an error in getting the data, need to handle it
-                print("error calling GET on /partnerships")
-                print(error)
-                return
-            }
-            guard let partnerships = result.value else {
-                print("error calling GET on /partnerships - result is nil")
-                return
-            }
-            // success!
-            if let partnerships = partnerships.partnerships {
-                for partnership in partnerships {
-                    print(partnership.description())
-                }
-            }
-            
-        }
+
     }
 
     override func didReceiveMemoryWarning() {

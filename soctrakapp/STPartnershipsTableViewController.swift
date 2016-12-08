@@ -9,39 +9,76 @@
 import UIKit
 
 class STPartnershipsTableViewController: UITableViewController {
+    
+    var partnerships: [Partnership]?
+    
+    @IBOutlet weak var tableview: UITableView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.loadPartnerships()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        self.loadPartnerships()
+//    }
+    
+    func loadPartnerships() {
+        Partnership.partnerships { result in
+            if let error = result.error {
+                // got an error in getting the data, need to handle it
+                print("error calling GET on /partnerships")
+                print(error)
+                return
+            }
+            guard let partnershipsWrapper = result.value else {
+                print("error calling GET on /partnerships - result is nil")
+                return
+            }
+            // success!
+            self.partnerships = partnershipsWrapper.partnerships
+            self.tableView?.reloadData()
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if self.partnerships == nil {
+            return 0
+        }
+        return self.partnerships!.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        // Configure the cell...
+        if self.partnerships != nil && self.partnerships!.count >= indexPath.row {
+            let partnership = self.partnerships![indexPath.row]
+            
+            cell.textLabel?.text = "\(partnership.userName!) : \(partnership.partnerName!)"
+            cell.detailTextLabel?.text = partnership.confirmed == true ? "Confirmed" : "Unconfirmed"
+        }
 
         return cell
     }
