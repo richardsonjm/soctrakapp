@@ -12,8 +12,6 @@ class STPartnershipsTableViewController: UITableViewController {
     
     var partnerships: [Partnership]?
     
-    @IBOutlet weak var tableview: UITableView?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,7 +67,6 @@ class STPartnershipsTableViewController: UITableViewController {
         return self.partnerships!.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
@@ -118,15 +115,20 @@ class STPartnershipsTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "partnershipDetail" {
+            if let partnershipVC = segue.destination as? STPartnershipViewController {
+                if let indexPath = self.tableView?.indexPathForSelectedRow {
+                    partnershipVC.partnership = self.partnerships?[indexPath.row]
+                }
+            }
+        }
     }
-    */
-
 }
